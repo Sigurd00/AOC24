@@ -9,6 +9,8 @@ def process_input(input_file):
     return xs, ys
 
 def solve1(xs, ys):
+    xs.sort()
+    ys.sort()
     dists = []
     for i in range(0, len(xs)):
         dists.append(abs(xs[i] - ys[i]))
