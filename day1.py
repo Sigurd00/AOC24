@@ -11,10 +11,10 @@ def process_input(input_file):
 def solve1(xs, ys):
     xs.sort()
     ys.sort()
-    dists = []
+    sum = 0
     for i in range(0, len(xs)):
-        dists.append(abs(xs[i] - ys[i]))
-    return sum(dists)
+        sum += (abs(xs[i] - ys[i]))
+    return sum
 
 def solve2(xs, ys):
     similarity = 0
